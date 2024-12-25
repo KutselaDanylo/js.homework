@@ -13,5 +13,5 @@ const fullName =(w1+w2+w3);
 console.log(fullName+"Victor");
 
 const userName =prompt("your name");
-const paiment =("300₽");
+const paiment =("300₴");
 alert(userName+" you ow us "+paiment);
