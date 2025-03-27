@@ -1,41 +1,63 @@
-let text1 = "Hello";
-let text2 = "World";
-
-if (text1 !== "" && text2 !== "") {
-    console.log("Обидва поля заповнені");
-} else {
-    console.log("Не всі поля заповнені");
+let drink = "Чай";
+switch (drink) {
+    case "Кава":
+        console.log("Ви обрали каву");
+        break;
+    case "Чай":
+        console.log("Ви обрали чай");
+        break;
+    case "Сік":
+        console.log("Ви обрали сік");
+        break;
+    default:
+        console.log("Невідомий вибір");
 }
+let day = "Понеділок";
 
-// 2. Обчислення суми чисел
-let num1 = 5;
-let num2 = 7;
-let sum = num1 + num2;
-
-if (sum > 10) {
-    console.log("Сума більша за 10");
+if (day === "Понеділок" || day === "Вівторок" || day === "Середа" || day === "Четвер" || day === "П’ятниця") {
+    console.log("Це робочий день");
+} else if (day === "Субота" || day === "Неділя") {
+    console.log("Це вихідний");
 } else {
-    console.log("Сума менша або дорівнює 10");
+    console.log("Невідомий день");
 }
-let text = "Я вчу JavaScript";
-
-if (text.includes("JavaScript")) {
-    console.log("Текст містить слово JavaScript");
+let month = 3;
+if (month >= 3 && month <= 5) {
+    console.log("Весна");
+} else if (month >= 6 && month <= 8) {
+    console.log("Літо");
+} else if (month >= 9 && month <= 11) {
+    console.log("Осінь");
+} else if (month === 12 || month === 1 || month === 2) {
+    console.log("Зима");
 } else {
-    console.log("Текст не містить слово JavaScript");
+    console.log("Невідомий місяць")
 }
-let number = 15;
-
-if (number > 10 && number < 20) {
-    console.log("Число входить в діапазон від 10 до 20")
+let color = "червоний";
+if (color === "червоний") {
+    console.log("Стоп");
+} else if (color === "зелений") {
+    console.log("Йти");
+} else if (color === "жовтий") {
+    console.log("Чекати");
 } else {
-    console.log("Число не входить в діапазон від 10 до 20");
+    console.log("Невідомий колір")
 }
-let name = "Max";
-let email = "max@example.com";
-let password = "mypassword";
-if (name.length >= 3 && email.includes("@") && email.includes(".") && password.length >= 6) {
-    console.log("Перенаправлення на іншу сторінку");
+let num1 = 10;
+let num2 = 2;
+let operator = "/";
+if (operator === "+") {
+    console.log("Результат:", num1 + num2)
+} else if (operator === "-") {
+    console.log("Результат:", num1 - num2)
+} else if (operator === "*") {
+    console.log("Результат:", num1 * num2)
+} else if (operator === "/") {
+    if (num2 === 0) {
+        console.log("Помилка: ділення на нуль!");
+    } else {
+        console.log("Результат:", num1 / num2);
+    }
 } else {
-    console.log("Помилка: неправильне заповнення")
+    console.log("Невідома операція");
 }
