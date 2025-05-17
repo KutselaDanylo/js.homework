@@ -24,6 +24,49 @@
         <input id="third-input" class="inputb" type="text" placeholder="number">
         <button id="check-data" class="btn">Checksum</button>
     </div>  -->
+    <!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Drei Aufgaben</title>
+  <style>
+    /* Stile für Aufgabe 3 */
+    #validation-input {
+      border: 3px solid #bdbdbd;
+    }
+    #validation-input.valid {
+      border-color: #4caf50;
+    }
+    #validation-input.invalid {
+      border-color: #f44336;
+    }
+  </style>
+</head>
+  <form>
+    <p>Choose a color:</p>
+    <label>
+      <input type="radio" name="color" value="red" checked />
+      Red
+    </label>
+    <label>
+      <input type="radio" name="color" value="white" />
+      White
+    </label>
+    <label>
+      <input type="radio" name="color" value="green" />
+      Green
+    </label>
+  </form>
+  <input type="text" placeholder="Ваше ім'я?" id="name-input" />
+  <h1>Привіт, <span id="name-output">незнайомець</span>!</h1>
+  <input type="text" id="validation-input" data-length="6" placeholder="Введи 6 символів"/>
+  <input id="font-size-control" type="range" min="8" max="72" value="16" />
+  <br />
+  <span id="text">Абракадабра!</span>
+
+  <script src="script.js"></script>
+</body>
+</html>
       </body>
 <script src="homework11.js" type="module"></script>
 </html>
